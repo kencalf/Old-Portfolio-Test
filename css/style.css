@@ -1,0 +1,225 @@
+
+
+body{
+background:rgba(0,0,0,1);
+
+}
+
+
+#logo{
+	position: fixed;
+	margin-left:20px;
+	top:30px;
+	min-width:70%;
+	font-family: Postmaster;
+	color:rgba(255,255,255,1);
+	letter-spacing:10px;
+	font-size:50px;
+	padding:0px;
+	z-index:200;
+}
+
+
+.panel{
+background: url(../bright_squares.png)fixed;
+height:100%;
+width:100%;
+margin-left:270px;
+margin-top:-20px;
+padding-top:100px;
+padding-left:50px;
+padding-right:50px;
+overflow-y: auto;
+overflow-x: auto;
+position: absolute;
+opacity: 0;
+z-index:2;
+-webkit-transition: opacity .3s ease-in-out;
+-moz-transition: opacity .3s ease-in-out;
+-o-transition: opacity .3s ease-in-out;
+-ms-transition: opacity .3s ease-in-out;
+transition: opacity .3s ease-in-out;
+transition:all .3 ease-in-out;
+}
+
+
+
+.panel:target{
+opacity: 1;
+z-index:120;
+}
+
+.panel:target a{
+color:white;
+
+}
+
+
+#design:target ~  #link-design,
+#draw:target ~  #link-draw,
+#list:target ~  #link-list,
+#about:target ~  #link-about,
+#dig:target ~ #link-dig, 
+#contact:target ~ #link-contact {
+
+-webkit-transition: all .5s ease-in-out;
+-moz-transition: all .5s ease-in-out;
+-o-transition: all .5s ease-in-out;
+transition: all .5s ease-in-out;
+}
+
+
+p{
+	width:50%;
+	padding:0px;
+	color:white;
+	font-family: "Caviar Dreams";
+	z-index:100;
+	font-size:15px;
+
+}
+
+
+#nav {
+list-style-type:none;
+margin-top:0px;
+margin-left:0px;
+text-align:left;
+position:fixed;
+z-index:3;
+margin-top:100px;
+background:none;
+padding-left:40px;
+padding-bottom:10px;
+padding-top:10px;
+padding-right:10px;
+width:auto;
+height:400px;
+}
+
+#nav li{
+display: list-item;
+padding:14px;
+
+background:none;
+
+}
+
+#nav a {
+font-family: "Caviar Dreams";
+text-decoration:none;
+color:#FFF;
+border-right:dashed white solid 2px;
+padding-right:10px;
+
+font-size:22px;
+margin-left:10px;
+margin-right:10px;
+-webkit-transition: all .3s ease-in-out;
+-moz-transition: all .3s ease-in-out;
+-o-transition: all .3s ease-in-out;
+transition: all .3s ease-in-out;
+}
+
+#nav li a:hover {
+cursor:pointer;
+color:white;
+padding-bottom:10px;
+margin-left:10px;
+margin-right:10px;
+-webkit-transition: all .3s ease-in-out;
+-moz-transition: all .3s ease-in-out;
+-o-transition: all .3s ease-in-out;
+transition: all .3s ease-in-out;
+}
+
+
+
+h1 {
+	font-family:"Caviar Dreams";
+color:white;
+margin-left:0px;
+margin-top:0px;
+text-transform:capitalize;
+
+}
+
+h2{
+	color:white;
+	font-family:Postmaster;
+	letter-spacing:4px;
+}
+
+
+
+@media only screen and (max-width : 680px) {
+h1{
+font-size:240px;
+letter-spacing:-43px;
+}
+
+p {width:70%}
+
+}
+
+
+@media only screen and (max-width : 490px) {
+h1{
+font-size:150px;
+letter-spacing:-26px;
+}
+
+
+#nav li{
+display: block;}
+
+#nav a {
+	
+text-decoration:none;
+border-right:dashed white solid 2px;
+padding-right:10px;
+}
+p {	
+width:80%;
+padding:20px;
+}
+
+}
+
+
+
+
+@font-face{
+	font-family: "Minotaur Phatte";
+	src:url(../minotaur.ttf);
+}
+
+@font-face{
+	font-family: "Caviar Dreams" ;
+	src: url(../CaviarDreams.ttf);
+}
+
+
+@font-face{
+	font-family: Thonburi;
+	src: url(../Thonburi.ttf) ;
+}
+
+@font-face{
+	font-family: Postmaster;
+	src: url(../POST.TTF);
+}
+
+
+
+
+
+#bottom{
+	position:fixed;
+opacity:.4;
+}
+
+.constrain{
+	
+	width:800px;
+}
